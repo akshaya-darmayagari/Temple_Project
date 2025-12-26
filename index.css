@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  @apply bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50;
+}
+
+@layer base {
+  * {
+    @apply border-orange-200;
+  }
+  body {
+    @apply text-orange-900;
+  }
+}
